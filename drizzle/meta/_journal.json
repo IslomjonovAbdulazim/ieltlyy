@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1759399427568,
+      "tag": "0000_quiet_robin_chapel",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1759412953199,
+      "tag": "0001_nebulous_power_pack",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1759481082581,
+      "tag": "0002_spicy_gamma_corps",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1759483859444,
+      "tag": "0003_lyrical_skrulls",
+      "breakpoints": true
+    }
+  ]
+}

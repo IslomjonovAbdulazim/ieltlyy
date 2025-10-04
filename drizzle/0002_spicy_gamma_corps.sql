@@ -1,0 +1,1 @@
+ALTER TABLE `test_parts` ADD `listening_script` text;

@@ -1,0 +1,331 @@
+/* Updated: 2025-10-04T14:51:30.227Z */
+/* Updated: 2025-10-04T14:51:27.331Z */
+/* Updated: 2025-10-04T14:51:26.631Z */
+/* Updated: 2025-10-04T14:51:25.930Z */
+/* Updated: 2025-10-04T14:51:24.734Z */
+/* Updated: 2025-10-04T14:51:24.229Z */
+/* Updated: 2025-10-04T14:51:23.132Z */
+/* Updated: 2025-10-04T14:21:33.889Z */
+/* Updated: 2025-10-04T14:05:34.695Z */
+/* Updated: 2025-10-04T12:24:14.440Z */
+/* Updated: 2025-10-04T12:11:10.846Z */
+/* Updated: 2025-10-04T10:36:33.070Z */
+/* Updated: 2025-10-03T20:13:58.011Z */
+/* Updated: 2025-10-03T20:09:24.194Z */
+/* Updated: 2025-10-03T19:37:52.917Z */
+/* Updated: 2025-10-03T10:37:43.984Z */
+/* Updated: 2025-10-03T10:37:35.644Z */
+/* Updated: 2025-10-03T09:08:58.972Z */
+/* Updated: 2025-10-03T08:28:55.353Z */
+/* Updated: 2025-10-03T08:26:44.962Z */
+/* Updated: 2025-10-02T19:05:12.810Z */
+/* Updated: 2025-10-02T13:35:37.143Z */
+/* Updated: 2025-10-02T13:35:35.726Z */
+/* Updated: 2025-10-02T13:35:26.300Z */
+/* Updated: 2025-10-02T11:52:24.480Z */
+/* Updated: 2025-10-02T11:51:57.314Z */
+/* Updated: 2025-10-02T11:51:56.008Z */
+/* Updated: 2025-10-02T08:07:13.563Z */
+/* Updated: 2025-10-02T08:07:12.267Z */
+/* Updated: 2025-10-02T07:48:24.093Z */
+/* Updated: 2025-09-30T20:10:33.523Z */
+/* Updated: 2025-09-30T20:10:28.454Z */
+/* Updated: 2025-09-30T19:54:09.445Z */
+/* Updated: 2025-09-29T18:20:43.303Z */
+/* Updated: 2025-09-29T18:20:42.762Z */
+/* Updated: 2025-09-29T17:06:12.243Z */
+/* Updated: 2025-09-29T17:05:49.404Z */
+/* Updated: 2025-09-29T16:49:08.048Z */
+/* Updated: 2025-09-29T16:48:46.359Z */
+/* Updated: 2025-09-29T16:48:45.251Z */
+/* Updated: 2025-09-29T16:48:44.820Z */
+/* Updated: 2025-09-29T16:48:42.120Z */
+/* Updated: 2025-09-29T16:48:41.511Z */
+/* Updated: 2025-09-29T16:48:39.561Z */
+/* Updated: 2025-09-29T16:48:38.623Z */
+/* Updated: 2025-09-29T16:48:23.481Z */
+/* Updated: 2025-09-29T16:48:23.350Z */
+/* Updated: 2025-09-29T16:48:22.964Z */
+/* Updated: 2025-09-29T16:29:44.444Z */
+/* Updated: 2025-09-29T16:29:43.427Z */
+/* Updated: 2025-09-29T16:29:43.320Z */
+/* Updated: 2025-09-29T16:29:41.385Z */
+/* Updated: 2025-09-29T16:29:40.974Z */
+/* Updated: 2025-09-29T16:29:40.705Z */
+/* Updated: 2025-09-29T16:29:38.384Z */
+/* Updated: 2025-09-29T16:29:38.053Z */
+/* Updated: 2025-09-29T16:29:33.205Z */
+/* Updated: 2025-09-29T16:29:31.216Z */
+/* Updated: 2025-09-29T16:29:29.908Z */
+/* Updated: 2025-09-29T16:29:25.646Z */
+/* Updated: 2025-09-29T16:29:25.246Z */
+/* Updated: 2025-09-29T16:29:24.441Z */
+/* Updated: 2025-09-29T16:29:24.018Z */
+/* Updated: 2025-09-29T16:29:23.616Z */
+/* Updated: 2025-09-29T16:29:23.106Z */
+/* Updated: 2025-09-29T16:29:22.506Z */
+/* Updated: 2025-09-29T16:29:21.406Z */
+/* Updated: 2025-09-29T16:29:20.511Z */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0a0a0a;
+
+  --color-primary: #171717;
+  --color-primary-foreground: #fafafa;
+
+  --color-secondary: #f5f5f5;
+  --color-secondary-foreground: #171717;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+
+  --color-accent: #f5f5f5;
+  --color-accent-foreground: #171717;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #0a0a0a;
+
+  --color-chart-1: #e67e22;
+  --color-chart-2: #2d8659;
+  --color-chart-3: #1e3a5f;
+  --color-chart-4: #f1c40f;
+  --color-chart-5: #e74c3c;
+
+  --color-sidebar: #f7f7f7;
+  --color-sidebar-foreground: #404040;
+  --color-sidebar-primary: #1a1a1a;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-accent: #f0f0f0;
+  --color-sidebar-accent-foreground: #1a1a1a;
+  --color-sidebar-border: #d4d4d8;
+  --color-sidebar-ring: #3b82f6;
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  /* Additional design system colors */
+  --color-brand-primary: #6B46C1;
+  --color-text-primary: #000000;
+  --color-text-secondary: #666666;
+  --color-success-green: #22C55E;
+  --color-background-light: #F8F9FA;
+  --color-accent-beige: #E8D5C4;
+  --color-border-gray: #E5E7EB;
+
+  /* Typography */
+  --font-primary: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-heading: "Inter", sans-serif;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #e5e5e5;
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+    --card: #ffffff;
+    --card-foreground: #0a0a0a;
+    --popover: #ffffff;
+    --popover-foreground: #0a0a0a;
+    --primary: #171717;
+    --primary-foreground: #fafafa;
+    --secondary: #f5f5f5;
+    --secondary-foreground: #171717;
+    --muted: #f5f5f5;
+    --muted-foreground: #737373;
+    --accent: #f5f5f5;
+    --accent-foreground: #171717;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e5e5e5;
+    --input: #e5e5e5;
+    --ring: #0a0a0a;
+    --chart-1: #e67e22;
+    --chart-2: #2d8659;
+    --chart-3: #1e3a5f;
+    --chart-4: #f1c40f;
+    --chart-5: #e74c3c;
+    --radius: 0.5rem;
+    --sidebar-background: #f7f7f7;
+    --sidebar-foreground: #404040;
+    --sidebar-primary: #1a1a1a;
+    --sidebar-primary-foreground: #fafafa;
+    --sidebar-accent: #f0f0f0;
+    --sidebar-accent-foreground: #1a1a1a;
+    --sidebar-border: #d4d4d8;
+    --sidebar-ring: #3b82f6;
+
+    /* Additional design system colors */
+    --brand-primary: var(--color-brand-primary);
+    --text-primary: var(--color-text-primary);
+    --text-secondary: var(--color-text-secondary);
+    --success-green: var(--color-success-green);
+    --background-light: var(--color-background-light);
+    --accent-beige: var(--color-accent-beige);
+    --border-gray: var(--color-border-gray);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: var(--font-heading);
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: var(--brand-primary);
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--text-primary);
+    color: var(--text-primary);
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .btn-secondary:hover {
+    opacity: 0.9;
+  }
+
+  .text-small {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary);
+  }
+
+  .text-accent-number {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
