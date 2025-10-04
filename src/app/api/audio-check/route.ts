@@ -61,7 +61,7 @@ export async function GET(request: NextRequest) {
     }
 
     // Default: Get all test parts and their audio status
-    let query = db.select({
+    const baseQuery = db.select({
       id: testParts.id,
       testId: testParts.testId,
       partNumber: testParts.partNumber,
@@ -70,11 +70,11 @@ export async function GET(request: NextRequest) {
     }).from(testParts);
 
     // Filter to show only parts without audio URLs unless showAll is true
-    if (!showAll) {
-      query = query.where(isNull(testParts.audioUrl));
-    }
+    const filteredQuery = !showAll 
+      ? baseQuery.where(isNull(testParts.audioUrl))
+      : baseQuery;
 
-    const parts = await query.orderBy(testParts.testId, testParts.partNumber);
+    const parts = await filteredQuery.orderBy(testParts.testId, testParts.partNumber);
 
     // Count parts with and without audio URLs
     const partsWithAudio = await db.select({ count: testParts.id })

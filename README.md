@@ -328,5 +328,4 @@ MIT License - Feel free to use for educational or commercial projects.
 
 ---
 
-**Built with ❤️ for IELTS learners worldwide**# Examy.me-Website-Clone-codebase--1-
-# Examy.me-Website-Clone-codebase--1-
+**Built with ❤️ for IELTS learners worldwide**
