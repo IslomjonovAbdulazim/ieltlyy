@@ -129,7 +129,7 @@ export const Dashboard = () => {
   };
 
   const currentPlan = customer?.products?.[0]?.name || "Free Plan";
-  const isPaidPlan = customer?.products?.[0]?.id !== "free" && customer?.products?.length > 0;
+  const isPaidPlan = customer?.products?.[0]?.id !== "free" && (customer?.products?.length || 0) > 0;
   const testsFeature = customer?.features?.tests;
   const testsRemaining = testsFeature?.balance || 0;
   const testsTotal = testsFeature?.included_usage || 0;
