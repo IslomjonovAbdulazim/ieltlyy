@@ -12,14 +12,11 @@ export async function GET(request: NextRequest) {
     const offset = parseInt(searchParams.get('offset') || '0');
     const full = searchParams.get('full') === 'true'; // New parameter for full details
     
-    let query = db.select().from(tests);
+    const baseQuery = db.select().from(tests);
     
-    if (type) {
-      // Fix case sensitivity - convert filter to lowercase to match seeded data
-      query = query.where(eq(tests.type, type.toLowerCase()));
-    }
-    
-    const testList = await query.limit(limit).offset(offset);
+    const testList = await (type 
+      ? baseQuery.where(eq(tests.type, type.toLowerCase())).limit(limit).offset(offset)
+      : baseQuery.limit(limit).offset(offset));
     
     // If full=true, fetch parts and questions for each test
     if (full && testList.length > 0) {
