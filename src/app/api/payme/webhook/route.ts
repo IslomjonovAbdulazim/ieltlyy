@@ -121,6 +121,7 @@ async function handleCreateTransaction(params: any, id: number) {
         amount,
         state: 1, // Created
         createTime: time,
+        createdAt: new Date().toISOString(),
       })
       .returning();
 
