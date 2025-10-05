@@ -49,7 +49,7 @@ export async function GET(req: NextRequest) {
       const u = await UserModel.findById(a.userId).lean();
       return {
         id: String(a._id),
-        user: u ? { id: String(u._id), name: u.name, email: u.email } : null,
+        user: u && !Array.isArray(u) ? { id: String(u._id), name: u.name, email: u.email } : null,
         section: a.section,
         score: a.score ?? null,
         total: a.total ?? null,
