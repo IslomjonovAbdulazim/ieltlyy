@@ -4,6 +4,22 @@ import { useEffect, useState } from "react";
 import { ReadingTest } from "@/components/tests/ReadingTest";
 import { useRouter } from "next/navigation";
 
+interface Question {
+  questionNumber: number;
+  questionText: string;
+  questionType: "multiple-choice" | "true-false-not-given" | "fill-blank";
+  options?: string[];
+  correctAnswer: string;
+}
+
+interface Part {
+  partNumber: number;
+  title: string;
+  instructions: string;
+  content: string;
+  questions: Question[];
+}
+
 interface Test {
   id: number;
   title: string;
@@ -11,7 +27,7 @@ interface Test {
   description: string;
   duration: number;
   totalMarks: number;
-  parts?: any[];
+  parts: Part[];
 }
 
 export default function ReadingPage() {
