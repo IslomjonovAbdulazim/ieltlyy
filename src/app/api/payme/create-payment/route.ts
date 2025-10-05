@@ -28,6 +28,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Create order in database
+    const now = new Date().toISOString();
     const [order] = await db
       .insert(paymeOrders)
       .values({
@@ -35,6 +36,8 @@ export async function POST(request: NextRequest) {
         productId,
         amount,
         status: "pending",
+        createdAt: now,
+        updatedAt: now,
       })
       .returning();
 
